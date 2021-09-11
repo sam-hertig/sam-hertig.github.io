@@ -1,0 +1,86 @@
+#viz {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 194%;
+    vertical-align: top;
+}
+
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    font-size: 13pt;
+    fill: #666666;  
+}
+
+.legend-header {
+    font-size: 13pt;
+    fill: #666666;  
+}
+
+.legend {
+    font-size: 12pt;
+}
+
+.node-prof {
+    font-size: 10pt;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.node-prof-highlight {
+    font-size: 11pt;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.node-prof-highlight-linked {
+    font-size: 11pt;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.node-field {
+    font-size: 10pt;
+    fill: #888888;
+    cursor: default;
+}
+
+.node-field-highlight {
+    fill: #000000;
+    cursor: default;
+    font-weight: bold;
+}
+
+.link {
+    fill: none;
+    stroke: #888888;
+    opacity: 0.2;
+    stroke-width: 1px;
+}
+
+.link-highlight {
+    opacity: 1.0;
+    stroke-width: 1px;
+    stroke: #000000;
+}
+
+.institute {
+    cursor: pointer;
+}
+
+.institute:hover {
+    font-weight: bold;
+}
