@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Hertig Visualizations – cellPACK data viewer</title>
+    <meta name="description" content="Prototype of an interactive visualization tool for exploring structural biological data in a web browser. It was designed as the front-end for cellPACK (developed by Graham Johnson et al).">
+    <meta name="author" content="Sam Hertig">    
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+    <!-- CSS ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel='stylesheet' type='text/css' href='cpviewer/jquery.bonsai.css'>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/samstyle.css">   
+
+    <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <!-- Title and Navbar –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">              
+            <div class="title">
+                <h1>
+                    <a href="index.html">
+                        Hertig Visualizations
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shine">        
+                <span>
+                    Make your data shine.
+                </span>
+            </div>          
+            <div class="menu">
+                <span>
+                    <a href="about.html">
+                        About
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="index.html#graphics">
+                        Graphics
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="index.html#videos">
+                        Videos
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    <a href="index.html#interactive">
+                        Interactive
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="index.html">
+                        Home
+                    </a>                  
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cellpack viewer –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+
+        <div class="row" style="margin-top: 3%">
+            <div class="twelve columns">
+                <h4>
+                    Interactive visualization of structural biological data
+                </h4>
+
+                <div id="3dwindow" class="u-max-full-width">
+                    <p>Loading, please wait...</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="row" style="margin-top: 1%">
+            <div class="eight columns">
+                <form action="#">   
+                    <fieldset>    
+                        <label for="filenames">
+                            Select data
+                        </label>    
+                        <select name="filenames" id="filenames" autocomplete="off" style="width: 300px;">
+                            <option value="cpviewer/hiv_env.dae" selected="selected">HIV envelope protein</option>
+                            <option value="cpviewer/hiv_capsid.dae">HIV capsid model</option>                
+                        </select>     
+                    </fieldset>
+                </form>
+            </div>  
+            <div class="four columns">
+                <form action="#">   
+                    <fieldset>    
+                        <label for="shadows">
+                            Toggle shadows
+                        </label>    
+                        <select name="shadows" id="shadows" autocomplete="off">
+                            <option value="off" selected="selected">off</option>
+                            <option value="on">on</option>
+                        </select>     
+                    </fieldset>
+                </form>
+            </div
+        </div>
+ 
+        <div class="row">
+            <div class="eight columns">
+                <p>
+                    The software <a href="http://www.cellpack.org/" target="_blank">cellPACK</a> enables researchers to assemble mesoscale models of entire cells, organelles or viruses. It's user interface is currently limited to a plug-in that runs in Maya or Cinema 4D, which are professional 3D softwares with steep learning curves. To make cellPACK accessible to a broader user base, <a href="https://www.alleninstitute.org/what-we-do/cell-science/about/team/staff-profiles/graham-johnson/" target="_blank">Graham Johnson</a> and Sam Hertig created a web interface for interactively visualizing cellPACK data, using <b>JavaScript, jQuery, <a href="http://threejs.org/" target="_blank">Three.js</a></b> and assembled models of HIV components. The hierarchical tree is created dynamically by parsing a Collada-file of the structural model.
+                </p>                
+            </div>
+            <div class="four columns">
+                <div id="tree">
+                </div>
+                <br>
+            </div>
+        </div>
+
+    </div>         
+
+
+    <!-- Footer –––––––––––––––––––––––––––––––––––––––––––––––– -->   
+    <div id="footer" class="footer">
+        <p>&copy; 2021 Hertig Visualizations. All rights reserved.</p>
+    </div>           
+
+    <!-- Javascript –––––––––––––––––––––––––––––––––––––––––––––––– -->   
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="cpviewer/three.min.v70.js"></script>
+    <script src="cpviewer/TrackballControls.js"></script>
+    <script src="cpviewer/ColladaLoader.js"></script>
+    <script src="cpviewer/jquery.bonsai.js"></script>
+    <script src="cpviewer/Main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

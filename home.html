@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Hertig Visualizations</title>
+    <meta name="description" content="Hertig Visualizations specializes in scientific graphics, videos, and interactive data visualizations.">
+    <meta name="author" content="Sam Hertig">
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+    <!-- CSS ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/samstyle.css">
+
+    <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <!-- Title and Navbar –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">               
+            <div class="title">
+                <h1>
+                    <a href="index.html">
+                        Hertig Visualizations
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shine">        
+                <span>
+                    Make your data shine.
+                </span>
+            </div>          
+            <div class="menu">
+                <span>
+                    <a href="about.html">
+                        About
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="graphics.html">
+                        Graphics
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="videos.html">
+                        Videos
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    <a href="interactive.html">
+                        Interactive
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Home                   
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container for NON-WebGL Menu –––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row" style="margin-top: 5%">
+            <div class="four columns" id="paperlink">
+                <center>
+                    <a href="graphics.html">
+                        <img src="images/paper.jpg" class="u-max-full-width" style="border: 0px" alt="Link to graphics portfolio"><br>
+                        <p>Graphics</p>
+                    </a>    
+                </center>
+            </div>
+            <div class="four columns">
+                <center>
+                    <a href="videos.html">
+                        <img src="images/spool.jpg" class="u-max-full-width" style="border: 0px" alt="Link to videos portfolio"><br>
+                        <p>Videos</p>
+                    </a>    
+                </center>
+            </div>
+            <div class="four columns">
+                <center>
+                    <a href="interactive.html">
+                        <img src="images/mols.jpg" class="u-max-full-width" style="border: 0px" alt="Link to interactive projects portfolio"><br>
+                        <p>Interactive</p>
+                    </a>
+                </center>    
+            </div>            
+        </div>
+    </div>
+
+    <!-- Message bar and footer–––––––––––––––––––––––––––––––––––––––––––––––– -->   
+    <div class="container" >
+        <div class="row">
+            <div class="twelve columns">
+                <div id="message" style="opacity : 1; margin-top: 3%;">
+                    <p>Hertig Visualizations is a Swiss-based company specializing in graphics, videos, and interactive data visualizations for science and technology. We can create your next interactive or 3D web-app, scientific illustration, animation, conference poster, or infographics. We also teach workshops on scientific visualization.                    
+                        <script type="text/javascript">
+                            var e = 'samhertig.com';
+                            e = 'sam' + '&#64;' + e;
+                            document.write('<a href="mai' + 'lto:' + e + '"> Email us to find out how we can make your data shine.</a>' );
+                        </script>
+                    </p>
+                </div>              
+                <div id="footer">
+                    <p>&copy; 2021 Hertig Visualizations. All rights reserved.</p>
+                </div>
+                <div id="warning">
+                    <p>(Please use a newer browser and/or enable WebGL for a better experience.)</p>
+                </div>                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript –––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <script type='text/javascript'>
+        console.log("Please use a newer browser and/or enable WebGl for a better experience.");
+        setTimeout(hideWarning, 5000);
+        function hideWarning() {
+            var doomed = document.getElementById("warning");
+            doomed.parentNode.removeChild(doomed);
+        }
+    </script>         
+
+</body>
+</html>

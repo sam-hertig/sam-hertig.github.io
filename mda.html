@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Hertig Visualizations – Multidomain Assembler</title>
+    <meta name="description" content="Multidomain Assembler (MDA), an algorithm for modeling and visualizing large multidomain proteins. Fully embedded in the molecular graphics software UCSF Chimera.">
+    <meta name="author" content="Sam Hertig"> 
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+    <!-- CSS ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel='stylesheet' type='text/css' href='cpviewer/jquery.bonsai.css'>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/samstyle.css">   
+
+    <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <!-- Title and Navbar –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">               
+            <div class="title">
+                <h1>
+                    <a href="index.html">
+                        Hertig Visualizations
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shine">        
+                <span>
+                    Make your data shine.
+                </span>
+            </div>          
+            <div class="menu">
+                <span>
+                    <a href="about.html">
+                        About
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="index.html#graphics">
+                        Graphics
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="index.html#videos">
+                        Videos
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    <a href="index.html#interactive">
+                        Interactive
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="index.html">
+                        Home
+                    </a>                  
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MDA –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row" style="margin-top: 3%">
+            <div class="twelve columns">
+                <h4>
+                    Multidomain Assembler (MDA) for UCSF Chimera
+                </h4>
+                <p>
+                    During his time as a postdoc at UCSF, Sam Hertig et al. developed an extension for the open-source molecular graphics program <a href="http://www.cgl.ucsf.edu/chimera/" target="_blank">UCSF Chimera</a> to facilitate modeling and visualization of large multidomain proteins. The tool was implemented in <b>Python</b> and is fully integrated into the software, which can be downloaded <a href="http://www.cgl.ucsf.edu/chimera/" target="_blank">here</a>.
+                </p>                
+            </div>
+        </div>
+        <div class="row" style="margin-top: 0%">
+            <div class="six columns">
+                <p>
+                    MDA provides molecular biologists with an overview of structural homologues of a target protein and provide guidance for finding the best template structures for <a href="http://en.wikipedia.org/wiki/Homology_modeling" target="_blank">homology modeling</a>. If you want to know more about MDA, have a look at <a href="docs/mda.pdf" target="_blank">the corresponding publication</a>. The manual for using the software can be found <a href="http://www.cgl.ucsf.edu/chimera/docs/UsersGuide/midas/mda.html" target="_blank">here</a>. The image illustrates how starting from a protein sequence, MDA searches for template structures including co-complexed structures (purple ribbons), and thereby highlights mutated residues in orange. Residues with no structural coverage (gaps) are represented as grey spheres. These template structures are then used to construct a full-length model, shown by the white space-filling model in the lower left corner. 
+                </p>
+            </div>
+            <div class="six columns">
+                <img src="images/mda.jpg" class="u-max-full-width" alt="MDA illustration">
+            </div>            
+        </div>
+
+        <div class="row" style="margin-top: 2%">
+            <div class="twelve columns">
+                <!-- Footer –––––––––––––––––––––––––––––––––––––––––––––––– -->   
+                <div id="footer" class="footer">
+                    <p>&copy; 2021 Hertig Visualizations. All rights reserved.</p>
+                </div> 
+            </div>
+        </div>
+
+    </div>  
+
+
+          
+
+</body>
+</html>

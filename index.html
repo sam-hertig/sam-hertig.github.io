@@ -1,1 +1,183 @@
-coming soon...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Hertig Visualizations</title>
+    <meta name="description" content="Hertig Visualizations specializes in scientific graphics, videos, and interactive data visualizations.">
+    <meta name="author" content="Sam Hertig">
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+    <!-- CSS ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/pho-swi-default-skin/default-skin.css">
+    <link rel="stylesheet" href="css/samstyle.css">
+
+    <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <!-- Title and Navbar –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">            
+            <div class="title">
+                <h1>
+                    <a href="#">
+                        Hertig Visualizations
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shine">        
+                <span>
+                    Make your data shine.
+                </span>
+            </div>          
+            <div class="menu">
+                <span>
+                    <a href="about.html" id="aboutlink">
+                        About
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#graphics" id="graphicslink">
+                        Graphics
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#videos" id="videoslink">
+                        Videos
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    <a href="#interactive" id="interactivelink">
+                        Interactive
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" id="homelink">
+                        Home
+                    </a>                  
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Container for WebGL Menu –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container" >
+        <div class="row">
+            <div class="twelve columns">
+                <div class="u-max-full-width" id="portfoliomenu">
+                    <div id="popup">
+                    </div>
+                    <div id="tooltip">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Root element of PhotoSwipe –––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader –ß active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message bar and footer–––––––––––––––––––––––––––––––––––––––––––––––– -->   
+
+    <div class="container" >
+        <div class="row">
+            <div class="twelve columns">
+                <div id="message">
+                    <p>Hertig Visualizations is a Swiss-based company specializing in graphics, videos, and interactive data visualizations for science and technology. We can create your next interactive or 3D web-app, scientific illustration, animation, conference poster, or infographics. We also teach workshops on scientific visualization.                    
+                        <script type="text/javascript">
+                            var e = 'samhertig.com';
+                            e = 'sam' + '&#64;' + e;
+                            document.write('<a href="mai' + 'lto:' + e + '"> Email us to find out how we can make your data shine.</a>' );
+                        </script>
+                    </p>
+                </div>
+                <div id="footer" style="opacity : 0;">
+                    <p>&copy; 2021 Hertig Visualizations. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript –––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <script type='text/javascript'>
+        var state = 0; // global variable
+    </script>
+    <script type='text/javascript' src='js/libs/three.min.js'></script>
+    <script type='text/javascript' src='js/libs/tween.min.js'></script>
+    <script type='text/javascript' src="js/libs/photoswipe.min.js"></script>
+    <script type='text/javascript' src="js/libs/photoswipe-ui-default.min.js"></script>
+    <script type='text/javascript' src="js/film.js"></script>
+    <script type='text/javascript' src="js/init-phoswi.js"></script>
+    <script type='text/javascript' src="js/molecules.js"></script>
+    <script type='text/javascript' src="js/paper.js"></script>
+    <script type='text/javascript' src="js/3dmenu.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-80539145-1', 'auto');
+        ga('send', 'pageview');
+    </script>   
+  
+</body>
+</html>

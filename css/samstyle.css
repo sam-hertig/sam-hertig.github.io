@@ -1,0 +1,108 @@
+@media (min-width: 620px) {
+  body {
+      width: calc(100vw - 34px);
+      padding-left: 17px;
+  }
+}  
+
+.menu a {
+  font-weight: normal;
+}
+
+.menu span {
+  white-space: nowrap;
+}
+
+.title {
+  margin-top: 2%; 
+}
+
+
+.title a {
+  font-weight: lighter;
+}
+
+.title a:hover {
+  color: black;
+}
+
+.shine { 
+  margin-right: 8%; 
+  color: #95987d; 
+  float: left;
+}
+
+.shine span {
+  white-space: nowrap;
+}
+
+.menu {
+    margin-bottom: 3%;    
+}
+
+@media (min-width: 800px) {
+  .menu {
+    float: right;  
+  }
+}
+
+@media (max-width: 800px) {
+  .shine {
+    min-width: 100%;
+    margin-bottom: 2%;     
+  }
+}
+
+.caption {
+  font-size: 90%;
+}
+
+#popup {
+  opacity: 0;
+  width: 960px;
+  min-height: 500px;  
+  position: absolute;  
+  left: 50%;
+  top: 50%;
+  margin:-250px 0 0 -480px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  z-index: 100;
+}
+
+#footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 0%;
+  color: #95987d;
+  font-size: 70%;
+}
+
+#message {
+  opacity: 0;
+  width: 100%;
+  margin: auto;
+  margin-top: 0%;
+}
+
+#tooltip {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  color: #000000;
+  background-color: hsla(0, 100%, 100%, 0.7);
+  padding: 3px 5px 3px 5px;
+  border: 0px solid black;
+}
+
+img, video { 
+   border:1px solid #aaaaaa;
+}
+
+.pswp__caption a {
+  color: white;
+}
+
+.pswp__caption a:hover {
+  color: #95987d; 
+}
