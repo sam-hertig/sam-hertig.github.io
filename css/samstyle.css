@@ -1,19 +1,26 @@
 body {
-  background-color: #434343;
-  color: #f3f3f3;
+  background-color: #16241e;
+  color: #aaaaaa;
   font-size: 1.6rem;
 }
 
 .header {
   text-align: right;
+  color: #cccccc;
 }
 
 .footer {
   margin-top: 5%;
+  font-size: 1.3rem;
 }
 
 h1, h2, h3, h4, h5, h6{
   margin-top: 2%;
+}
+
+ul {
+  list-style-position: outside;
+  list-style-type: disc;
 }
 
 li {
@@ -22,7 +29,7 @@ li {
 
 ul ul {
   margin-top: 0;
-  color: #d3d3d3;
+  color: #888888;
 }
 
 a {
@@ -35,19 +42,22 @@ a:visited {
 }
 
 a:hover {
-    color: #ffffff;
+    color: #cccccc;
 }
 
 .button.button-primary {
   color: #434343;
   background-color: #b6d7a8;
   border-color: #434343; 
+  font-size: 1.6rem;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .button.button-primary:hover,
 .button.button-primary:focus {
   color: #434343;
-  background-color: #ffffff;
+  background-color: #cccccc;
   border-color: #434343; 
 }
 
