@@ -1,0 +1,259 @@
+html {
+    -webkit-text-size-adjust: none; /*Prevent font scaling in landscape*/
+    height: 100%; /*Prevent weird autoscroll upon device orientation change on iOS*/
+}
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+    color: black;
+    font-weight: 300;
+    height: 100%; /*Prevent weird autoscroll upon device orientation change on iOS*/
+}
+
+#wrap {
+    height: 100%; /*Prevent weird autoscroll upon device orientation change on iOS*/
+    overflow: hidden; /*Prevent weird autoscroll upon device orientation change on iOS*/
+}
+
+.arrow {
+    margin: 10px;
+    position:absolute;
+    top: 50%;           
+}
+
+.right {
+    right: 0px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);    
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    display: none;    
+}
+
+.left {
+    -webkit-transform: translate(0, -50%) rotate(180deg);
+    -moz-transform: translate(0, -50%) rotate(180deg);    
+    -ms-transform: translate(0, -50%) rotate(180deg);
+    -o-transform: translate(0, -50%) rotate(180deg);
+    transform: translate(0, -50%) rotate(180deg);
+    display: none;
+}
+
+
+
+.arrowShape {
+    fill: #eeeeee;
+    fill-opacity: 0.8;
+    stroke: none;
+    stroke-width: 1;
+    cursor: default;
+    -webkit-transition: fill 0.75s;
+    -moz-transition: fill 0.75s;
+    -ms-transition: fill 0.75s;
+    -o-transition: fill 0.75s;
+    transition: fill 0.75s;
+    -webkit-animation-name: arrowpulse;
+    -moz-animation-name: arrowpulse;
+    -ms-animation-name: arrowpulse;
+    -o-animation-name: arrowpulse;
+    animation-name: arrowpulse;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -ms-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.arrowShape:hover {
+    fill: #888888;
+    cursor: pointer;
+    -webkit-transition: fill 0.25s;
+    -moz-transition: fill 0.25s;
+    -ms-transition: fill 0.25s;
+    -o-transition: fill 0.25s;
+    transition: fill 0.25s;
+    -webkit-animation: paused;
+    -moz-animation: paused;
+    -ms-animation: paused;
+    -o-animation: paused;
+    animation: paused;
+}
+
+@keyframes arrowpulse {
+    from {fill: #eeeeee;}
+    to {fill: #888888;}
+}
+
+
+
+
+@media screen and (min-width: 980px) and (min-height: 980px) {
+    body {
+        font-size: 16pt;       
+    }
+}
+
+@media screen and (max-width: 979px), (max-height: 979px) {
+    body {
+        font-size: 12pt;       
+    }
+    .arrow {
+        margin: 0px;           
+    }      
+    .right {
+        -webkit-transform: translate(0, -50%) scale(0.6);
+        -moz-transform: translate(0, -50%) scale(0.6);    
+        -ms-transform: translate(0, -50%) scale(0.6);
+        -o-transform: translate(0, -50%) scale(0.6);
+        transform: translate(0, -50%) scale(0.6);
+    }
+    .left {
+        -webkit-transform: translate(0, -50%) rotate(180deg) scale(0.6);
+        -moz-transform: translate(0, -50%) rotate(180deg) scale(0.6);    
+        -ms-transform: translate(0, -50%) rotate(180deg) scale(0.6);
+        -o-transform: translate(0, -50%) rotate(180deg) scale(0.6);
+        transform: translate(0, -50%) rotate(180deg) scale(0.6);
+    }
+    .arrowShape {
+        stroke-width: 2;        
+    }
+}    
+
+@media screen and (max-width: 600px), (max-height: 600px) {
+    body {
+        font-size: 8pt;       
+    }       
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #AAAAAA;
+}
+
+span {
+    font-weight: 600; 
+}
+
+.cas9 {
+    color: #888888;
+}
+
+.pamdomain {
+    color: #8F8BAE;
+}
+
+.ruvcdomain {
+    color: #A7B6CE;
+}
+
+.hnhdomain {
+    color: #AB8B8B;
+}
+
+.grna {
+    color: #C4A0D9;
+}
+
+.nucleus {
+    color: #666666;   
+}
+
+.dna1 {
+    color: #8900E6;   
+}
+
+.dna2 {
+    color: #2600E6;   
+}
+
+.credits-container {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+}
+
+.credits {
+    font-weight: 300;    
+    font-size: 70%;
+    color: #AAAAAA;
+}
+
+.flex-container {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 90%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;  
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;    
+    -webkit-align-items: flex-start;
+    align-items: flex-start;  
+}
+
+.story-container {
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+    max-width: 960px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+}
+
+.textbox {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;    
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2px;
+    cursor: default;   
+}
+
+.inactive {
+    border: none;
+    color: #dddddd;
+    pointer-events: none;
+}
+
+.active:hover, .active.current {
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: #000000;
+}
