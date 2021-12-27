@@ -6,7 +6,7 @@ body {
 
 .header {
   text-align: right;
-  color: #cccccc;
+  color: #eeeeee;
 }
 
 .footer {
@@ -16,15 +16,18 @@ body {
 
 h1, h2, h3, h4, h5, h6{
   margin-top: 6%;
+  margin-bottom: 1%;
+  color: #eeeeee;
 }
 
 ul {
   list-style-position: outside;
   list-style-type: disc;
+  padding-left: 1.8rem;
 }
 
 li {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 ul ul {
@@ -42,7 +45,7 @@ a:visited {
 }
 
 a:hover {
-    color: #cccccc;
+    color: #eeeeee;
 }
 
 .button.button-primary {
@@ -58,7 +61,7 @@ a:hover {
 .button.button-primary:hover,
 .button.button-primary:focus {
   color: #434343;
-  background-color: #cccccc;
+  background-color: #eeeeee;
   border-color: #434343; 
 }
 
