@@ -14,8 +14,8 @@ body {
   font-size: 1.3rem;
 }
 
-h1, h2, h3, h4, h5, h6{
-  margin-top: 6%;
+h3, h4{
+  margin-top: 5%;
   margin-bottom: 1%;
   color: #eeeeee;
 }
@@ -65,4 +65,12 @@ a:hover {
   border-color: #434343; 
 }
 
+.portfolio-item {
+  margin-bottom: 5%;
+}
 
+video, img {
+  width: 100%    !important;
+  height: auto   !important;
+  border: 1px solid #000000;
+}
