@@ -50,6 +50,10 @@ a:hover {
     color: #eeeeee;
 }
 
+.centered {
+  text-align: center;
+}
+
 .button.button-primary {
   color: #434343;
   background-color: #b6d7a8;
