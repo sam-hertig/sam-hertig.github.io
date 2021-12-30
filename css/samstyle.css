@@ -14,10 +14,12 @@ body {
   font-size: 1.3rem;
 }
 
-h3, h4{
-  margin-top: 5%;
-  margin-bottom: 1%;
-  color: #eeeeee;
+h1 {
+  margin-top: 2%;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 ul {
@@ -56,6 +58,7 @@ a:hover {
   font-size: 1.6rem;
   text-transform: none;
   font-weight: 400;
+  margin-bottom: 5%;
 }
 
 .button.button-primary:hover,
