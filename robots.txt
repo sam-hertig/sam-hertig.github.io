@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /temp
+Disallow: /temp/
+Sitemap: https://www.samhertig.com/sitemap.xml
