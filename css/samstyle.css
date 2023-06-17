@@ -6,8 +6,7 @@ body {
 
 .header {
   text-align: right;
-  color: #eeeeee;
-  margin-bottom: 3%;
+  margin-bottom: 12%;
   font-size: 1.25rem;
 }
 
@@ -20,6 +19,7 @@ h1 {
   font-size: 3.25rem;
   margin-top: 2%;
   margin-bottom: 2%;
+  color: #eeeeee;
 }
 
 h2 {
