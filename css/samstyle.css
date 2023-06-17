@@ -1,25 +1,34 @@
 body {
   background-color: #16241e;
   color: #aaaaaa;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .header {
   text-align: right;
   color: #eeeeee;
+  margin-bottom: 3%;
+  font-size: 1.25rem;
 }
 
 .footer {
   margin-top: 5%;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 h1 {
+  font-size: 3.25rem;
   margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #cccccc;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 ul {
